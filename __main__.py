@@ -36,14 +36,13 @@ def password(pword_user):
 
         elif user_choice.lower() == 'm':
             pwd2 = pword_user
-            while wcontinue == True:
-                pwlength = len(pwd2)
-                alphabet = "abcdefghijklmnopqrstuvwxyz"
-                pwd2 = pwd2 + alphabet[random.randrange(len(alphabet))]
-                pwd2, wcontinue = valid_password(pwd=pwd2)
-            print('Modified password:', pwd2)
+            print('TO DO Modified password: ')
             return pwd2
 
         else:
             print("Invalid choice. Please try again.")
             return None
+
+if __name__ == "__main__":
+  pword_user = input('Enter your password: ')
+  password(pword_user)
