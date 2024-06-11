@@ -38,11 +38,6 @@ git clone https://github.com/your-username/password-generator.git
 cd password-generator
 python __main__.py
 ```
-Alternatively, you can run the script directly without cloning the repository:
-```cmd
-python https://raw.githubusercontent.com/your-username/password-generator/main/__main__.py
-```
-
 
 ## Usage
 
