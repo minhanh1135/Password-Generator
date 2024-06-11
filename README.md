@@ -2,15 +2,26 @@
 
 ## About This Project
 
-The Password Generator project is a simple tool that allows users to generate secure passwords. It provides functionality to check the safety of a provided password and generate random passwords based on user input. The project aims to assist users in creating strong passwords that meet recommended security criteria.
+This is a simple password generator application that allows users to create strong, secure passwords that meet certain requirements.
 
-## Functionality
+## Features
 
-The project offers the following features:
+### Password Validation
+- Checks if the user's input password meets the required length (at least 10 characters)
+- Ensures the password contains at least one uppercase letter, one number, and one special character
+- Provides feedback to the user if the password does not meet the requirements
 
-1. **Password Safety Checking**: The program evaluates the safety level of a given password and determines if it meets the required security criteria.
-2. **Random Password Generation**: In cases where the provided password does not meet the security requirements, the program generates a random password for the user.
-3. **Password Generation Based on User Input**: Users can also request a password to be generated based on their specific requirements.
+### Password Generation
+- Generates a random password that meets the requirements (at least 10 characters, with at least one uppercase letter, one number, and one special character)
+- Allows the user to choose between using the randomly generated password or modifying their own password
+
+### Password Modification
+- If the user's input password does not meet the requirements, the application offers the option to modify the password
+- The application will automatically add random characters to the end of the user's password until it meets the requirements
+
+### User-Friendly Interface
+- The application provides clear and concise prompts to guide the user through the password generation process
+- Error messages and warnings are displayed when the user's input does not meet the requirements
 
 ## Libraries Used
 
@@ -22,26 +33,22 @@ The project utilizes the following library:
 
 To use the Password Generator project, follow these steps:
 
-1. Clone the repository:
 ```cmd
 git clone https://github.com/your-username/password-generator.git
-```
-2. Navigate to the project directory:
-```cmd
 cd password-generator
+python __main__.py
 ```
-3. Run the program:
+Alternatively, you can run the script directly without cloning the repository:
 ```cmd
-python password_generator.py
+python https://raw.githubusercontent.com/your-username/password-generator/main/__main__.py
 ```
+
 
 ## Usage
 
-1. Run the program.
-2. Enter a password of your choice.
-3. The program will check the safety of the provided password.
-4. If the password does not meet the security criteria, a random password will be generated and displayed.
-5. If the password meets the security criteria, it will be considered safe.
+When you run the script, it will prompt you to enter a password. If the password does not meet the requirements, the script will display a warning and ask you if you want to use a random password or modify the existing one.
+
+If you choose to use a random password, the script will generate a new password that meets the requirements and display it. If you choose to modify the existing password, the script will add random characters to the end of the password until it meets the requirements, and then display the modified password.
 
 ## Contributing
 
