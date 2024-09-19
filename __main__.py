@@ -1,6 +1,6 @@
 import random
 from password_validator import valid_password
-from password_generator import replaceWithNumber, replaceWithSpecialNumber, replaceWithUpper
+from password_generator import replaceWithNumber, replaceWithSpecialNumber, replaceWithUpper, modify_password_simple, modify_existing_password
 
 def password(pword_user):
     pwd, wcontinue = valid_password(pwd=pword_user, show_warning=True)
@@ -35,7 +35,7 @@ def password(pword_user):
             return password2
 
         elif user_choice.lower() == 'm':
-            pwd2 = modify_password_simple(pwd)
+            pwd2 = modify_existing_password(pwd)
             return pwd2
 
         else:
