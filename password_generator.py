@@ -58,4 +58,4 @@ def modify_existing_password(pwd):
         additions += random.choice("abcdefghijklmnopqrstuvwxyz")
 
     # Trả về mật khẩu đã được chỉnh sửa mà không chèn giữa, chỉ thêm vào đầu/cuối
-    return additions + pwd
+    return  pwd + additions
