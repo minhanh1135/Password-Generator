@@ -35,8 +35,7 @@ def password(pword_user):
             return password2
 
         elif user_choice.lower() == 'm':
-            pwd2 = pword_user
-            print('TO DO Modified password: ')
+            pwd2 = modify_password_simple(pwd)
             return pwd2
 
         else:
