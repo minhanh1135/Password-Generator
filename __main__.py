@@ -36,6 +36,7 @@ def password(pword_user):
 
         elif user_choice.lower() == 'm':
             pwd2 = modify_existing_password(pwd)
+            print('New password:', pwd2)
             return pwd2
 
         else:
