@@ -40,6 +40,8 @@ def modify_password_simple(pwd):
 
 def modify_existing_password(pwd):
     # Thêm số nếu chưa có
+    additions = ""
+    
     if not any(char.isdigit() for char in pwd):
         additions += str(random.randrange(0, 10))
 
